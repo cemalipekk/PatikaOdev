@@ -1,0 +1,18 @@
+--1.
+SELECT AVG(length) FROM film;
+
+
+--2.
+SELECT COUNT(*) FROM film
+WHERE title LIKE 'C%';
+
+
+--3.
+SELECT * FROM film
+WHERE rental_rate = 0.99
+ORDER BY length DESC
+LIMIT 1;
+
+--4.
+SELECT COUNT(DISTINCT rental_rate) FROM film
+WHERE length > 150;
